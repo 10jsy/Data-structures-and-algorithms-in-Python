@@ -7,3 +7,8 @@ def bubble_sort(alist):
 sort_list = [5,8,1,3,4,88,11,3,15,666,7,18,81,444]
 bubble_sort(sort_list)
 print(sort_list)
+
+#Time complexity: best = O(n)
+#                 average = O(n^2)
+#                 worst = O(n^2)
+#Space complexity: worst = O(1)
