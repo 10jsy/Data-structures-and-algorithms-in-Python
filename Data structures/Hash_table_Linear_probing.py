@@ -56,3 +56,14 @@ class HashTable:
 
     def __putitem__(self, key, value):
         self.put(key, value)
+
+#Time complexity:
+#Average case: search = O(1)
+#              insert = O(1)
+#              delete = O(1)
+#Worst case: search = O(n)
+#            insert = O(n)
+#            delete = O(n)
+#
+#Space complexity:
+#Worst case: O(n)
