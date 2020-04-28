@@ -19,3 +19,8 @@ def gap_insertion_sort(alist, start, gap):
 alist = [54,26,93,17,77,31,44,55,20]
 shell_sort(alist)
 print(alist)
+
+#Time complexity: best=O(nlogn)
+#                 worst=O(n(log(n))^2)
+#                 average=O(n(log(n))^2)
+#Space complexity: worst=O(1)
