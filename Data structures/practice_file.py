@@ -5,7 +5,7 @@ class Node:
 
     def get_next(self):
         return self.next
-
+    
     def get_data(self):
         return self.data
 
@@ -13,17 +13,17 @@ class Node:
         self.next = next_node
 
 class Queue:
-    def __init__(self, max_limit=1000):
+    def __init__(self, max_limit=None):
         self.head = None
         self.tail = None
+        self.max_limit = max_limit
         self.size = 0
-        self.max_limit=max_limit
 
     def is_empty(self):
         return self.size == 0
-    
-    def enqueue(self, new_data):
-        new_node = Node(new_data)
+
+    def enqueue(self, data):
+        new_node = Node(data)
         if self.is_empty():
             self.head = new_node
             self.tail = new_node
@@ -31,7 +31,7 @@ class Queue:
             new_node.set_next(self.tail)
             self.tail = new_node
         self.size += 1
-    
+
     def dequeue(self):
         if self.is_empty():
             raise Exception("Stack underflow")
