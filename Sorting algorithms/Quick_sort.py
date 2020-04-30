@@ -35,3 +35,8 @@ def partition(alist, first, last):
 alist = [54,26,93,17,77,31,44,55,20]
 quick_sort(alist)
 print(alist)
+
+#Time complexity: best = O(n log n)
+#                 average = O(n log n)
+#                 worst = O(n^2)
+#Space complexity: worst = O(log n)
